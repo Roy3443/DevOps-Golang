@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: go-web-app
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx # caz we are using nginx ingress controller or else it won't watch for the ingress resource
+  rules:
+  - host: go-web-app.local
+    http:
+      paths: 
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: go-web-app
+            port:
+              number: 80
