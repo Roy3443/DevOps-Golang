@@ -3,10 +3,8 @@ FROM golang:1.22 as base
 WORKDIR /app
 
 COPY go.mod .   
-#just like requiremnts.txt
 
 RUN go mod download
-#pip install -r requirements.txt
 
 COPY . .
 
