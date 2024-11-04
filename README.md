@@ -1,2 +1,2 @@
 
-Complete DevOpsified Golnag app
+Complete DevOpsified Golang app
