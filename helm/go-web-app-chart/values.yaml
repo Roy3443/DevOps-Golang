@@ -4,7 +4,7 @@ image:
   repository: Roy3443/DevOps-Golang
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "11689693248"
+  tag: "11697820499"
 
 ingress:
   enabled: false
